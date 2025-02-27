@@ -657,14 +657,14 @@ input::placeholder {
   margin-bottom: 8px;
 }
 
-.modal-form-label{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    display: block;
-    margin-bottom: 4px;
+.modal-form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .modal-form-input-cont {
@@ -677,11 +677,104 @@ input::placeholder {
   width: 100%;
   height: 40px;
   padding-left: 38px;
-  outline: transparent;
+  outline:transparent;
 }
 
-.modal-form-input:focus {
+.modal-form-input:focus,
+.modal-form-input:hover{
   border: 1px solid #4d5ae5;
 }
 
-.modal-form-icon {}
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translate(-50%, -50%);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: #4d5ae5;
+}
+
+.modal-form-con-checkbox {
+  margin-bottom: 24px;
+}
+
+.send-btn {
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+
+.custom-checkbox {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+  margin-right: 8px;
+}
+
+.label-checkbox {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.label-checkbox a {
+  text-decoration: underline;
+  color: #4d5ae5;
+}
+
+.checkbox:checked + .label-checkbox .custom-checkbox {
+  background-color: #404bbf;
+  border: transparent;
+  fill: #f4f4fd;;
+}
+
+.modal-form-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.cont-user-text {
+  margin-bottom: 16px;
+}
+
+.user-comment {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+  resize: none;
+}
+
+.user-comment:focus {
+  border: 1px solid #4d5ae5;
+  outline: transparent;
+}
+
+.user-coment::placeholder {
+  font-weight: 400;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}

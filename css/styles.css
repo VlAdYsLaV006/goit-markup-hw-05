@@ -431,7 +431,7 @@ transform: translateY(0%);
 
 .form-footer {
   display: flex;
-  gap 24px;
+  gap: 24px
 }
 
 .icon-menu {
@@ -544,7 +544,12 @@ transform: translateY(0%);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.form-footer {
+  display: flex;
+  gap: 24px;
 }
 
 .form-input {
@@ -554,7 +559,11 @@ transform: translateY(0%);
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 16px;
-  background-color: #2e2f42;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 input::placeholder {
@@ -563,12 +572,12 @@ input::placeholder {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 
 .btn-subscribe {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
@@ -585,6 +594,7 @@ input::placeholder {
   text-align: center;
   color: #fff;
   margin-left: 24px;
+  gap: 16px;
   cursor: pointer;
 }
 
@@ -593,7 +603,6 @@ input::placeholder {
   top: 0;
   left: 0;
   fill: #fff;
-  margin-left: 16px
 }
 /* backdrop */
 .backdrop {

@@ -420,6 +420,7 @@ transform: translateY(0%);
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+  margin-bottom: 16px;
 }
 
 .icon-title {
@@ -566,6 +567,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  border: none;
   padding: 8px 24px;
   width: 165px;
   height: 40px;
@@ -640,7 +642,7 @@ input::placeholder {
   fill: #4d5ae5;
 }
 
-.close-btn-icon{ 
+.close-btn-icon{
 }
 
 .modal-text {
@@ -651,6 +653,9 @@ input::placeholder {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
+}
+
+.modal-form {
 }
 
 .modal-conteiner-block {
@@ -708,7 +713,6 @@ input::placeholder {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   border: none;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;

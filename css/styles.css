@@ -420,12 +420,18 @@ transform: translateY(0%);
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+  margin-bottom: 16px;
 }
 
 .icon-title {
   margin-bottom: 16px;
   justify-content: center;
   color:#ffffff
+}
+
+.form-footer {
+  display: flex;
+  gap 24px;
 }
 
 .icon-menu {
@@ -562,13 +568,13 @@ input::placeholder {
 
 
 .btn-subscribe {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   border: none;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
@@ -579,7 +585,7 @@ input::placeholder {
   text-align: center;
   color: #fff;
   margin-left: 24px;
-  gap: 16px;
+  cursor: pointer;
 }
 
 .icon-frame {
@@ -587,6 +593,7 @@ input::placeholder {
   top: 0;
   left: 0;
   fill: #fff;
+  margin-left: 16px
 }
 /* backdrop */
 .backdrop {

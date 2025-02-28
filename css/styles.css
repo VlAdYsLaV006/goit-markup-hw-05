@@ -603,6 +603,7 @@ input::placeholder {
   top: 0;
   left: 0;
   fill: #fff;
+  margin-left: 16px;
 }
 /* backdrop */
 .backdrop {

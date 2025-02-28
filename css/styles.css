@@ -420,7 +420,6 @@ transform: translateY(0%);
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-bottom: 16px;
 }
 
 .icon-title {
@@ -656,6 +655,8 @@ input::placeholder {
 }
 
 .modal-form {
+  display: flex;
+  gap: 24px;
 }
 
 .modal-conteiner-block {
@@ -683,6 +684,11 @@ input::placeholder {
   height: 40px;
   padding-left: 38px;
   outline:transparent;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .modal-form-input:focus,
@@ -694,6 +700,7 @@ input::placeholder {
   position: absolute;
   top: 50%;
   left: 19px;
+  margin-left: 16px;
   transform: translate(-50%, -50%);
 }
 
@@ -706,10 +713,12 @@ input::placeholder {
 }
 
 .send-btn {
+  display: flex;
   border-radius: 4px;
   padding: 16px 32px;
   width: 169px;
   height: 56px;
+  min-width: 165px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   border: none;
@@ -719,6 +728,7 @@ input::placeholder {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  cursor: pointer
 }
 
 .custom-checkbox {
